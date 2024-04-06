@@ -5,7 +5,8 @@
     --width-desktop: 1440px;
     --color-green: hsl(75, 94%, 57%);
     --color-white: hsl(0, 0%, 100%);
-    --color-grey: hsl(0, 0%, 12%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
     --color-off-black: hsl(0, 0%, 8%);
     --font-size-p: 14px;
     --font-inter: "Inter", Arial, sans-serif;
@@ -17,4 +18,84 @@
     margin: 0px;
     border: none;
     box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-off-black);
+    font-family: var(--font-poppins);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--width-desktop);
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: var(--color-dark-grey);
+    width: 300px;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card-avatar-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-avatar-name {
+    color: var(--color-white);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card-avatar-loc {
+    font-size: var(--font-size-p);
+    color: var(--color-green);
+}
+
+.card-avatar-bio {
+    color: var(--color-white);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: var(--color-green);
+    color: var(--color-dark-grey);
 }

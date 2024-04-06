@@ -1,2 +1,25 @@
 @charset "utf-8";
 
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+};
+
+:root {
+    /* Variáveis de Dimensões */
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    /* Variáveis de Cores */
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+
+    /* Variáveis de Tipografia */
+    --font-size-p: 14px;
+    --font-inter: "Inter", Arial, sans-serif;
+    --font-poppins: "Poppins", Arial, sans-serif;
+};
